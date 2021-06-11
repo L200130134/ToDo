@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">To Do</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message">This app contains simple function and doesn\'t has setting feature</string>
+    <string name="message_no_item">No item list</string>
+    <string name="message_progress">Wait a sec…</string>
+    <string name="bottom_title_task">Task</string>
+    <string name="bottom_title_setting">Setting</string>
+    <string name="title_task_list">Task List</string>
+    <string name="title_continue_sign_in">Sign In to Continue</string>
 </resources>

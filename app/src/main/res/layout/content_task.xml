@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
     android:layout_below="@id/top"
     android:layout_above="@id/bottom">
 
@@ -16,15 +17,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/productsans_bold"
-            android:text="Sun, Sept 14 2020!"
             android:textColor="@color/blue"
             android:layout_margin="20dp"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            tools:text="Sun, Sept 14 2020" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/list"
+            android:id="@+id/list_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:clipToPadding="false"
             android:scrollbarSize="0dp"/>
 
         <TextView
@@ -32,10 +36,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/productsans_bold"
-            android:text="Task List"
+            android:text="@string/title_task_list"
             android:textColor="@color/blue"
             android:layout_margin="20dp"
             android:textSize="15sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:clipToPadding="false"
+            android:scrollbarSize="0dp"/>
 
     </LinearLayout>
 

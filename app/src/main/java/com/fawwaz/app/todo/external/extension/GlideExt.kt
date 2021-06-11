@@ -4,7 +4,6 @@ import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
 import android.widget.ImageView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.BaseRequestOptions
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.signature.ObjectKey
 

@@ -8,7 +8,22 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="divider">#DCDCDC</color>
+    <color name="dialog">#56000000</color>
     <color name="background">#FBFCFF</color>
+    <color name="background_card">#F0F3F8</color>
     <color name="blue">#0442D0</color>
+    <color name="blue_variant">#0335A6</color>
+    <color name="blue_dark">#02287C</color>
+    <color name="orange">#FF9124</color>
     <color name="text">#808080</color>
+
+    <color name="blue_light">#4A78E1</color>
+    <color name="background_blue">#DBE6FF</color>
+    <color name="background_orange">#FFF2E5</color>
+    <color name="background_red">#FEEAEB</color>
+
+    <color name="text_blue">#0442D0</color>
+    <color name="text_orange">#FF9D3C</color>
+    <color name="text_red">#FC6179</color>
 </resources>

@@ -11,17 +11,13 @@ class MainApp : Application() {
         instance = this
     }
 
-    override fun attachBaseContext(context: Context) {
-        super.attachBaseContext(context)
-    }
-
-    override fun getApplicationContext(): Context {
-        return super.getApplicationContext()
-    }
-
     companion object {
-        var instance: MainApp? = null
+        fun getDimension(id: Int): Float {
+            return instance.resources.getDimension(id)
+        }
+
+        lateinit var instance: MainApp
             private set
-        val res: Resources get() = instance!!.resources
+        val res: Resources get() = instance.resources
     }
 }

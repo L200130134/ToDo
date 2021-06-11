@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/dialog">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:padding="25dp"
+        android:background="@drawable/bg_dialog">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_toStartOf="@id/button_delete"
+                    android:layout_centerVertical="true"
+                    style="@style/Text.Title"
+                    android:text="New Task"/>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/button_delete"
+                    style="@style/Button"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:autofillHints="name"
+                    android:textColor="@color/text_red"
+                    android:background="@drawable/bg_button_red"
+                    android:text="Delete" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/Text.Title"
+                android:layout_marginTop="20dp"
+                android:text="Title"/>
+
+            <EditText
+                android:id="@+id/input_title"
+                style="@style/EditText"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:hint="Fill title" />
+
+            <TextView
+                style="@style/Text.Title"
+                android:layout_marginTop="20dp"
+                android:text="Description"/>
+
+            <EditText
+                android:id="@+id/input_description"
+                style="@style/EditText.TextArea"
+                android:layout_marginTop="10dp"
+                android:hint="Fill description" />
+
+            <TextView
+                android:id="@+id/title_status"
+                style="@style/Text.Title"
+                android:layout_marginTop="20dp"
+                android:text="Status"/>
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/EditText"
+                android:layout_marginTop="10dp"
+                android:autofillHints="name"
+                android:hint="Completed"
+                app:drawableEndCompat="@drawable/ic_sync" />
+
+            <TextView
+                style="@style/Text.Title"
+                android:layout_marginTop="20dp"
+                android:text="Choose Date"/>
+
+            <TextView
+                android:id="@+id/date_picker"
+                style="@style/EditText"
+                android:layout_marginTop="10dp"
+                android:autofillHints="name"
+                android:hint="-Choose date here-"
+                app:drawableEndCompat="@drawable/ic_edit_date" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|center_vertical"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/button_cancel"
+                    style="@style/Button"
+                    android:autofillHints="name"
+                    android:layout_marginEnd="20dp"
+                    android:text="Cancel" />
+
+                <TextView
+                    android:id="@+id/button_create"
+                    style="@style/Button.Enabled"
+                    android:text="Create Task" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

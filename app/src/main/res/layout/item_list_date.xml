@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/min_date_card_width"
+    android:gravity="center"
+    android:layout_marginStart="7dp"
+    android:layout_marginEnd="7dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_date">
+
+    <View
+        android:id="@+id/dot"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:alpha="0"
+        android:background="@drawable/bg_circle"/>
+
+    <TextView
+        android:id="@+id/text_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/productsans_bold"
+        tools:textColor="@color/text"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="M"/>
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/productsans_medium"
+        tools:textColor="@color/text"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="12"/>
+
+</LinearLayout>

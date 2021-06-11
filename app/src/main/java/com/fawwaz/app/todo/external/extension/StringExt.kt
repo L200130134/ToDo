@@ -1,7 +1,5 @@
 package com.staygrateful.developers.filesid.ext
 
-import com.staygrateful.developers.filesid.model.FragmentModel
-
 fun String?.singletonList(): ArrayList<String>? {
     if (this != null) {
         val result = ArrayList<String>()

@@ -1,10 +1,7 @@
 package com.staygrateful.developers.filesid.ext
 
 import android.app.Activity
-import android.content.Context
 import android.graphics.BitmapFactory
-import android.graphics.drawable.Drawable
-import java.io.File
 
 fun Any?.getDrawableSize(resourceId: Int): Size {
     if (this != null) {

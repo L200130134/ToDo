@@ -1,12 +1,8 @@
 package com.staygrateful.developers.filesid.ext
 
-import android.graphics.Rect
-import android.util.Size
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.FloatRange
-import androidx.annotation.IntRange
 import androidx.annotation.LayoutRes
 
 fun ViewGroup?.addView(@LayoutRes layId : Int?) : View? {

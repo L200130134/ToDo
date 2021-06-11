@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".presentation.activity.AuthActivity">
+
+    <ImageView
+        android:id="@+id/icon_empty"
+        android:layout_marginTop="-15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_file"
+        android:background="@drawable/bg_circle"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:fontFamily="@font/productsans_bold"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        android:text="@string/title_continue_sign_in" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="40dp"
+        app:buttonSize="wide" />
+
+</RelativeLayout>

@@ -1,8 +1,7 @@
 package com.staygrateful.developers.filesid.ext
 
 import androidx.annotation.Nullable
-import java.lang.Exception
-import java.util.ArrayList
+import java.util.*
 
 fun <T> arrayListOf(): ArrayList<T> = ArrayList()
 

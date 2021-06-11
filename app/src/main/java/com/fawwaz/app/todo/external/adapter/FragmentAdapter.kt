@@ -7,6 +7,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import java.util.*
 
 class FragmentAdapter : FragmentStateAdapter {
+
     private var fragments: MutableList<Fragment> = ArrayList()
     private val ids: MutableList<Int> = ArrayList()
 
